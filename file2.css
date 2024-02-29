@@ -1,0 +1,152 @@
+/*
+NO css os comentários são bem diferentes dos comentários do html
+
+dessa forma vc não confundir como será feito seus comentários
+
+*/
+
+
+
+h1 {
+
+    color:red;
+}
+div > p {
+    color:blue;
+}
+
+
+#container{
+
+    background-color: bisque;
+    padding: 20px;
+}
+
+.destaque{
+
+    background-color: yellow;
+    border: 2px  solid orange;
+
+
+}
+
+.filho > p {
+
+    color: blueviolet;
+}
+
+span{
+    background-color: bisque;
+    padding: 20px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+
+    background-color: lightblue;
+    color:darkred
+}
+
+#box_model {
+
+        width: 300px;
+        border: 30px solid green;
+        border-radius: 60px;
+        /* Resposanvel pela discancia entre a borda e o conteudo */
+        padding: 30px;
+        /* Resposanvel pela discancia entre a borda e o conteudo */
+        margin: 30px;
+      
+}
+
+
+.relative-parent {
+    background: #156236;
+ }
+ 
+ .relative {
+    background: #af8542;
+    height: 100px;
+    width: 300px;
+    position: relative;
+    top: 20px;
+    left: 45px;
+ }
+ .absolute {
+    background: #c590f5;
+    height: 100px;
+    width: 120px;
+    position: absolute;
+    top: 70px;
+    right: 32px;
+   }
+
+   #posiciona1, #posiciona2, #posiciona3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+
+
+   }
+   #posiciona1{
+    background-color: #F00;
+    left: 0;
+    top: 0;
+    z-index:17
+    }  
+    #posiciona2{
+    background-color: #0F0;
+    left: 0;
+    top: 0;
+    z-index:6;
+    }
+    #posiciona3{
+    background-color: #00F;
+    left: 0;
+    top: 0;
+    }
+
+
+    div {
+        font-size: 24px;
+        padding: 12px;
+    }
+    
+    div.greenyellow {
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        /* specifying z-index value */
+        z-index: 1;
+    
+        width: 300px;
+        height: 280px;
+        background-color: greenyellow;
+    }
+    
+    div.orange {
+        position: absolute;
+        top: 190px;
+        left: 0;
+        z-index: 3;
+        width: 220px;
+        height: 150px;
+        margin-top: -120px;
+        background-color: orange;
+    }
+    
+    div.skyblue {
+        position: absolute;
+        top: 120px;
+        left: 160px;
+        z-index: 2;
+        width: 280px;
+        height: 150px;
+        padding-left: 120px;
+        background-color: skyblue;
+    }
