@@ -1,6 +1,24 @@
 #teste {
 
     background-color: bisque;
-    padding: 20px;
+    padding: 20px 10px;
+    border: 5em solid blueviolet;
+    margin: 5em;
+}
+
+body {
+
+
+    font-family: Arial;
+    background-color: cadetblue;
+}
+
+.teste_class{
+    text-align: center;
+}
+
+input{
+/* Questão que errrei no concurso */
+    border-radius: 15%;
 
 }
