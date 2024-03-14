@@ -1,19 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<style>
+/* apenas  as Tags <span> imediatamente após uma div fechada */    
+div + h5 {
+  background-color: cadetblue;
+}
+/* Todas  as Tags <ul> imediatamente após uma div fechada */ 
+div ~ h4 {
+  background-color: burlywood;
+}
+
+/* Todas  as Tags <h6> filhas diretas de uma div  */ 
+div > h3 {
+  background-color:aqua;
+}
+/* Todas  as Tags <p> dentro de uma div  */
+div  h2  {
+  background-color: blanchedalmond;
+}
+
+</style>
 </head>
 <body>
+    <div></div>
+    <h5> Estou imdiatamente abaixo de uma div sou imrão dela (USANDO +)</h5>
+    <h5> Estou abaixo de uma div mais não sou irmão </h5>
 
-    <div id="novo"></div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const valores = {x: "Novo Nome", x1: [0,12,3]};
-            document.getElementById("novo").innerHTML = valores.x1[1];
-        });
-    </script>
+    <div></div>
+    <span></span>
+    <h4> Estou  abaixo de uma div não sou irmão (USANDO ~)</h4>
+    <h4> Estou  abaixo de uma div não sou irmão (USANDO ~)</h4>
+
+    <div>
+        <h3> Sou filho direto  de uma div  (USANDO > )</h3>
+        <span> <h3> Sou  filho de uma div mais não sou direto (USANDO >)</h3></span>     
+    </div>
+
+    <div>
+        <h2> Sou filho de uma div  (div  h2 )</h2>
+        <span> <h2> Sou filho de uma div (div  h2)</h2></span>     
+    </div>
+
+
+
+
 </body>
 </html>
+
+
