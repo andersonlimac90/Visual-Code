@@ -9,6 +9,7 @@ adicionarAluno(){
     console.log(aluno)
 }
 mostrarTodos(){
+    let texto
     for (let alu of this.alunos){
         texto+= 'ID' + alu.id_aluno+' - ';
         texto+= 'NOME' + alu.nome+' - ';
